@@ -23,4 +23,13 @@ class MumblingTest {
         assertThat(accum).isEqualTo("A");
     }
 
+    @Test
+    public void accum_shouldSeparateSequencesWithDash() {
+        // Given
+        String string = "ab";
+        // When
+        String accum = mumbling.accum(string);
+        // Then
+        assertThat(accum).isEqualTo("A-B");
+    }
 }
