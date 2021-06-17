@@ -32,4 +32,14 @@ class MumblingTest {
         // Then
         assertThat(accum).isEqualTo("A-B");
     }
+
+    @Test
+    public void accum_lettersShouldBeRepeatedEqualToTheirIndexPlusOne() {
+        // Given
+        String string = "ZpglnRxqenU";
+        // When
+        String accum = mumbling.accum(string);
+        // Then
+        assertThat(accum).isEqualTo("Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu");
+    }
 }
