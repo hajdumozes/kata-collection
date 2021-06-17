@@ -30,7 +30,7 @@ class MumblingTest {
         // When
         String accum = mumbling.accum(string);
         // Then
-        assertThat(accum).isEqualTo("A-B");
+        assertThat(accum).isEqualTo("A-Bb");
     }
 
     @Test
