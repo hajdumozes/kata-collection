@@ -1,3 +1,3 @@
-- TODO: test case 1: return should be the count of vowels in a word
+- DONE: test case 1: return should be the count of vowels in a word
 - TODO: test case 2: y doesn't count as vowels
 - TODO: test case 3: cases shouldn't matter
