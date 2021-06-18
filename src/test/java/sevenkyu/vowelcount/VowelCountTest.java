@@ -23,4 +23,14 @@ class VowelCountTest {
         assertThat(count).isEqualTo(5);
     }
 
+    @Test
+    public void getCount_shouldNotCountYLetter() {
+        // Given
+        String string = "yay";
+        // When
+        int count = vowelCount.getCount(string);
+        // Then
+        assertThat(count).isEqualTo(1);
+    }
+
 }
