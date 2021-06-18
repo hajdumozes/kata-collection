@@ -9,6 +9,7 @@ class VowelCount {
     public int getCount(String str) {
         return (int) IntStream.range(0, str.length())
             .mapToObj(str::charAt)
+            .map(Character::toLowerCase)
             .filter(VOWELS::contains)
             .count();
     }
