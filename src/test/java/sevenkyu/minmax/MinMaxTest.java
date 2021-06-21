@@ -22,4 +22,14 @@ class MinMaxTest {
         // Then
         assertThat(output).isEqualTo("5 1");
     }
+
+    @Test
+    public void highAndLow_shouldUseAbsoluteValue() {
+        // Given
+        String input = "1 -2 -32 4 5";
+        // When
+        String output = minMax.highAndLow(input);
+        // Then
+        assertThat(output).isEqualTo("5 -32");
+    }
 }
