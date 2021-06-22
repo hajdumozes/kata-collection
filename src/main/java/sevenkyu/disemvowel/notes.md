@@ -1,3 +1,3 @@
 - DONE: case 1 - output should be the same as input if there is no wovel
 - DONE: case 2 - vowels should disappear from string
-- TODO: case 3 - any non-vowel character should not be effected
+- DONE: case 3 - any non-vowel character should not be effected
