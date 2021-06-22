@@ -4,6 +4,6 @@ class Disemvowel {
 
     public String disemvowel(String str) {
         // Code away...
-        return null;
+        return str;
     }
 }
