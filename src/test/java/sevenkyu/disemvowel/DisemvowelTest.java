@@ -23,4 +23,14 @@ class DisemvowelTest {
         assertThat(output).isEqualTo(input);
     }
 
+    @Test
+    public void disemvowel_shouldRemoveVowelsFromInput() {
+        // Given
+        String input = "What are you, a communist?";
+        // When
+        String output = this.disemvowel.disemvowel(input);
+        // Then
+        assertThat(output).isEqualTo("Wht r y,  cmmnst?");
+    }
+
 }
