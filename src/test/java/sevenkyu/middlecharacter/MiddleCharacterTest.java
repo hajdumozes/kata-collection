@@ -23,4 +23,13 @@ class MiddleCharacterTest {
         assertThat(output).isEqualTo(input);
     }
 
+    @Test
+    void givenInputLengthIsOdd_getMiddle_shouldReturnMiddleCharacter() {
+        // given
+        String input = "testing";
+        // when
+        String output = middleCharacter.getMiddle(input);
+        assertThat(output).isEqualTo("t");
+    }
+
 }
