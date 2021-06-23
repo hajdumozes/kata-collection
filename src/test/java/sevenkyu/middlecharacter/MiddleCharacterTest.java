@@ -29,6 +29,7 @@ class MiddleCharacterTest {
         String input = "testing";
         // when
         String output = middleCharacter.getMiddle(input);
+        // then
         assertThat(output).isEqualTo("t");
     }
 
@@ -38,6 +39,7 @@ class MiddleCharacterTest {
         String input = "middle";
         // when
         String output = middleCharacter.getMiddle(input);
+        // then
         assertThat(output).isEqualTo("dd");
     }
 
