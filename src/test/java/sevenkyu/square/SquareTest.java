@@ -23,4 +23,14 @@ class SquareTest {
         assertThat(square).isTrue();
     }
 
+    @Test
+    void givenNegativeNumber_isSquare_shouldReturnFalse() {
+        // given
+        int input = -1;
+        // when
+        boolean square = this.square.isSquare(input);
+        // then
+        assertThat(square).isFalse();
+    }
+
 }
