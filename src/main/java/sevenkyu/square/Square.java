@@ -3,6 +3,7 @@ package sevenkyu.square;
 class Square {
 
     public boolean isSquare(int n) {
-        return true;
+        double squareRoot = Math.sqrt(n);
+        return squareRoot == Math.floor(squareRoot);
     }
 }
