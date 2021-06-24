@@ -43,5 +43,13 @@ class SquareTest {
         assertThat(square).isTrue();
     }
 
-
+    @Test
+    void givenPositiveNonSquareNumber_isSquare_shouldReturnFalse() {
+        // given
+        int input = 26;
+        // when
+        boolean square = this.square.isSquare(input);
+        // then
+        assertThat(square).isFalse();
+    }
 }

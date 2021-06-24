@@ -1,4 +1,4 @@
 - done: case 1: for zero return true
 - done: case 2: for negative number return false
 - done: case 3: for positive number which is a square, return true
-- todo: case 4: for positive number which is not a square, return true
+- done: case 4: for positive number which is not a square, return true
