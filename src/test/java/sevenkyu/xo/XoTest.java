@@ -42,4 +42,14 @@ class XoTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenAsManyOAsX_getXO_shouldReturnTrue() {
+        // given
+        String input = "xoxo";
+        // when
+        boolean output = this.xo.getXO(input);
+        // then
+        assertThat(output).isTrue();
+    }
 }
