@@ -52,4 +52,14 @@ class XoTest {
         // then
         assertThat(output).isTrue();
     }
+
+    @Test
+    void etXO_shouldBeCaseInsensitive() {
+        // given
+        String input = "XoXo";
+        // when
+        boolean output = this.xo.getXO(input);
+        // then
+        assertThat(output).isTrue();
+    }
 }
