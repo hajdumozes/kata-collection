@@ -1,4 +1,4 @@
-- todo case 1: with no x and o in string output should be false
+- done case 1: with no x and o in string output should be false
 - todo case 2: if there are more x, than o, output should be false
 - todo case 3: if there are more o, than x, output, should be false
 - todo case 4: for same amount of o and x, output should be true
