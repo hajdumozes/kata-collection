@@ -23,4 +23,13 @@ class XoTest {
         assertThat(output).isTrue();
     }
 
+    @Test
+    void givenMoreXThanO_getXO_shouldReturnFalse() {
+        // given
+        String input = "xavier";
+        // when
+        boolean output = this.xo.getXO(input);
+        // then
+        assertThat(output).isFalse();
+    }
 }
