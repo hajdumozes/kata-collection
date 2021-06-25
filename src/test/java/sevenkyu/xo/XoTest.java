@@ -32,4 +32,14 @@ class XoTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenMoreOThanX_getXO_shouldReturnFalse() {
+        // given
+        String input = "coconut";
+        // when
+        boolean output = this.xo.getXO(input);
+        // then
+        assertThat(output).isFalse();
+    }
 }
