@@ -2,4 +2,4 @@
 - done case 2: if there are more x, than o, output should be false
 - done case 3: if there are more o, than x, output, should be false
 - done case 4: for same amount of o and x, output should be true
-- todo case 5: it should be case-insensitive
+- done case 5: it should be case-insensitive

@@ -6,10 +6,10 @@ class Xo {
         int xCounter = 0;
         int oCounter = 0;
         for (Character character : str.toCharArray()) {
-            if (character == 'x') {
+            if (Character.toLowerCase(character) == 'x') {
                 xCounter++;
             }
-            if (character == 'o') {
+            if (Character.toLowerCase(character) == 'o') {
                 oCounter++;
             }
         }
