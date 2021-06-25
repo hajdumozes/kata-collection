@@ -5,11 +5,11 @@ class Xo {
     public boolean getXO(String str) {
         int xCounter = 0;
         int oCounter = 0;
-        for (Character character : str.toCharArray()) {
-            if (Character.toLowerCase(character) == 'x') {
+        for (Character character : str.toLowerCase().toCharArray()) {
+            if (character == 'x') {
                 xCounter++;
             }
-            if (Character.toLowerCase(character) == 'o') {
+            if (character == 'o') {
                 oCounter++;
             }
         }
