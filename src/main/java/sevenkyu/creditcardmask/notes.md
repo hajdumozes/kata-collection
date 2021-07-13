@@ -2,4 +2,4 @@
 
 ❗ case 2: 4 characters long, don't mask
 
-❗ case 3: less than 4 characters long, don't mask
+✅ case 3: less than 4 characters long, don't mask
