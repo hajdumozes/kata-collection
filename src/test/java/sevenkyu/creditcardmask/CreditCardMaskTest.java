@@ -24,4 +24,16 @@ class CreditCardMaskTest {
         // then
         assertThat(output).isEqualTo(string);
     }
+
+    @Test
+    void givenStringIs4CharactersLong_maskify_shouldNotMask() {
+        // given
+        String string = "what";
+
+        // when
+        String output = creditCardMask.maskify(string);
+
+        // then
+        assertThat(output).isEqualTo(string);
+    }
 }
