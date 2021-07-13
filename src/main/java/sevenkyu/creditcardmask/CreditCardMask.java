@@ -7,8 +7,8 @@ public class CreditCardMask {
         if (str.length() <= 4) {
             return str;
         }
-        String charsToMask = str.substring(0, str.length() - 5);
-        String charsToKeep = str.substring(str.length() - 5);
+        String charsToMask = str.substring(0, str.length() - 4);
+        String charsToKeep = str.substring(str.length() - 4);
         String mask = charsToMask.replaceAll(".", MASKING_CHARACTER);
         return mask + charsToKeep;
     }

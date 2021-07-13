@@ -41,7 +41,20 @@ class CreditCardMaskTest {
     void givenStringIsMoreThan4CharactersLong_maskify_shouldMaskAllButLastFour() {
         // given
         String string = "someRandomPassword";
-        String expected = "#############sword";
+        String expected = "##############word";
+
+        // when
+        String output = creditCardMask.maskify(string);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    void givenStringIsMoreThan4CharactersLongWithNumbers_maskify_shouldMaskAllButLastFour() {
+        // given
+        String string = "4556364607935616";
+        String expected = "############5616";
 
         // when
         String output = creditCardMask.maskify(string);
