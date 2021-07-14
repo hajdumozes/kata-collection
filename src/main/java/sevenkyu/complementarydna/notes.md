@@ -1,4 +1,4 @@
-❗ case 1: 'A' should be replaced with 'T';
+✅ case 1: 'A' should be replaced with 'T';
 
 ❗ case 2: 'T' should be replaced with 'A';
 

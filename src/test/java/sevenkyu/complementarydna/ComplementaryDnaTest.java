@@ -17,11 +17,12 @@ class ComplementaryDnaTest {
     void givenCharacterA_makeComplement_shouldReplacedThemWithCharacterT() {
         // given
         String input = "AAA";
+        String expectedOutput = "TTT";
 
         // when
         String output = complementaryDna.makeComplement(input);
 
         // then
-        assertThat(input).isEqualTo(output);
+        assertThat(output).isEqualTo(expectedOutput);
     }
 }

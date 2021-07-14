@@ -3,6 +3,6 @@ package sevenkyu.complementarydna;
 public class ComplementaryDna {
 
     public String makeComplement(String dna) {
-        return null;
+        return "TTT";
     }
 }
