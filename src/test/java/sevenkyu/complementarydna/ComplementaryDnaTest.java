@@ -51,4 +51,17 @@ class ComplementaryDnaTest {
         // then
         assertThat(output).isEqualTo(expectedOutput);
     }
+
+    @Test
+    void givenCharacterC_makeComplement_shouldReplacedThemWithCharacterG() {
+        // given
+        String input = "CCC";
+        String expectedOutput = "GGG";
+
+        // when
+        String output = complementaryDna.makeComplement(input);
+
+        // then
+        assertThat(output).isEqualTo(expectedOutput);
+    }
 }
