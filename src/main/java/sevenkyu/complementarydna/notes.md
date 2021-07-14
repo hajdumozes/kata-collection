@@ -1,6 +1,6 @@
 ✅ case 1: 'A' should be replaced with 'T';
 
-❗ case 2: 'T' should be replaced with 'A';
+✅ case 2: 'T' should be replaced with 'A';
 
 ❗ case 3: 'G' should be replaced with 'C';
 
