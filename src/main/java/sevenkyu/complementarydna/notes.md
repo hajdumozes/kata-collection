@@ -6,4 +6,4 @@
 
 ✅ case 4: 'C' should be replaced with 'G';
 
-❗ case 5: Input can't be empty;
+✅ case 5: All cases together;
