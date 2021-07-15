@@ -2,4 +2,4 @@
 
 ✅ case 2: should sort letters
 
-❗ case 3: should filter duplicates
+✅ case 3: should filter duplicates
