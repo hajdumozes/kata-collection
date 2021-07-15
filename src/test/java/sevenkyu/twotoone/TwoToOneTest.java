@@ -16,9 +16,23 @@ class TwoToOneTest {
     @Test
     void longest_shouldConcatInputStrings() {
         // given
+        String string = "abc";
+        String otherString = "def";
+        String expected = "abcdef";
+
+        // when
+        String output = twoToOne.longest(string, otherString);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    void longest_shouldSortLetters() {
+        // given
         String string = "string";
         String otherString = "key";
-        String expected = "stringkey";
+        String expected = "egiknrsty";
 
         // when
         String output = twoToOne.longest(string, otherString);
