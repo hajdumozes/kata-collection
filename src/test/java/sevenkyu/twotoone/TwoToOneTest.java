@@ -40,4 +40,18 @@ class TwoToOneTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void longest_shouldFilterDuplicates() {
+        // given
+        String string = "lessdangerousthancoding";
+        String otherString = "loopingisfunbutdangerous";
+        String expected = "abcdefghilnoprstu";
+
+        // when
+        String output = twoToOne.longest(string, otherString);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
