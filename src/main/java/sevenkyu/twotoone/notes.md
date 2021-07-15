@@ -1,4 +1,4 @@
-❗ case 1: should concat two input strings
+✅ case 1: should concat two input strings
 
 ❗ case 2: should sort letters
 
