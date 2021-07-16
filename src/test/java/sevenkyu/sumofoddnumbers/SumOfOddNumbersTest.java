@@ -37,4 +37,17 @@ class SumOfOddNumbersTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenRowIs42_rowSumOfOddNumbers_shouldReturnWithSumOfInputRowInOddTriangle() {
+        // given
+        int input = 42;
+        int expected = 74088;
+
+        // when
+        int output = sumOfOddNumbers.rowSumOddNumbers(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
