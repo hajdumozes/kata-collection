@@ -1,11 +1,11 @@
 package sevenkyu.validatepin;
 
-import java.util.List;
+import java.util.regex.Pattern;
 
 class ValidatePin {
-    static final List<Integer> ALLOWED_LENGTHS = List.of(4, 6);
+    static final Pattern PATTERN = Pattern.compile("\\d{4}|\\d{6}");
 
     public boolean validatePin(String pin) {
-        return ALLOWED_LENGTHS.contains(pin.length());
+        return PATTERN.matcher(pin).matches();
     }
 }
