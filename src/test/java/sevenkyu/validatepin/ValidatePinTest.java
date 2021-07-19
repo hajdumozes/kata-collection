@@ -73,4 +73,16 @@ class ValidatePinTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenInputHasALetter_validatePin_shouldReturnFalse() {
+        // given
+        String input = "123a";
+
+        // when
+        boolean output = validatePin.validatePin(input);
+
+        // then
+        assertThat(output).isFalse();
+    }
 }
