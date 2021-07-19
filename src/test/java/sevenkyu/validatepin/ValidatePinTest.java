@@ -85,4 +85,16 @@ class ValidatePinTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenInputHasNoLetter_validatePin_shouldReturnTrue() {
+        // given
+        String input = "1236";
+
+        // when
+        boolean output = validatePin.validatePin(input);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }

@@ -1,7 +1,7 @@
 scenario 1: input must be contain digits
     
     ✅ case 1: have at least one letter in it, return false
-    ❗ case 2: have only digits, return true
+    ✅ case 2: have only digits, return true
 
 scenario 2: input must be 4 or 6 char long
 
