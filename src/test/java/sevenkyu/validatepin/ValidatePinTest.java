@@ -25,4 +25,16 @@ class ValidatePinTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenInputLengthIs4CharsLong_validatePin_shouldReturnTrue() {
+        // given
+        String input = "1234";
+
+        // when
+        boolean output = validatePin.validatePin(input);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }
