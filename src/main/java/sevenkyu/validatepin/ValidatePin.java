@@ -1,11 +1,11 @@
 package sevenkyu.validatepin;
 
+import java.util.List;
+
 class ValidatePin {
+    static final List<Integer> ALLOWED_LENGTHS = List.of(4, 6);
 
     public boolean validatePin(String pin) {
-        if (pin.length() == 4 || pin.length() == 6) {
-            return true;
-        }
-        return false;
+        return ALLOWED_LENGTHS.contains(pin.length());
     }
 }
