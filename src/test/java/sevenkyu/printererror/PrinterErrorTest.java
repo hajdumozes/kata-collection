@@ -29,7 +29,7 @@ class PrinterErrorTest {
     @Test
     void givenOneCharString_printerError_shouldPrintZeroOutOfOne() {
         // given
-        String input = "";
+        String input = "a";
         String expected = "0/1";
 
         // when
