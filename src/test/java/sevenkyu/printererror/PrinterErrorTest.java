@@ -51,4 +51,17 @@ class PrinterErrorTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenOneErrorPresent_printerError_shouldPrintOneOutOfLength() {
+        // given
+        String input = "aaaamaabbbbbbbb";
+        String expected = "1/15";
+
+        // when
+        String output = printerError.printerError(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
