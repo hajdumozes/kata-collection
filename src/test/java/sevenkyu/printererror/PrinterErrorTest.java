@@ -38,4 +38,17 @@ class PrinterErrorTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenErrorlessString_printerError_shouldPrintZeroOutOfLength() {
+        // given
+        String input = "aaaaaaabbbbbbbb";
+        String expected = "0/15";
+
+        // when
+        String output = printerError.printerError(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
