@@ -69,7 +69,7 @@ class PrinterErrorTest {
     void givenErrorsPresent_printerError_shouldPrintErrorAmountOutOfLength() {
         // given
         String input = "aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz";
-        String expected = "1/15";
+        String expected = "3/56";
 
         // when
         String output = printerError.printerError(input);
