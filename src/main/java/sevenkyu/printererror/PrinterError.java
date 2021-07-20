@@ -1,11 +1,9 @@
 package sevenkyu.printererror;
 
 class PrinterError {
+    static final Character SEPARATOR = '/';
 
     public String printerError(String s) {
-        if (s.length() == 1) {
-            return "0/1";
-        }
-        return "0/0";
+        return "0" + SEPARATOR + s.length();
     }
 }

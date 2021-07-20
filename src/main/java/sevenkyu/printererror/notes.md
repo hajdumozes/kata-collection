@@ -2,7 +2,7 @@ scenario 1: with no errors, printer should print "0/length"
 
     ✅ case 1: for empty string, it should return 0/0
     ✅ case 2: for 1 length string, it should return 0/1
-    ❗ case 3: for 15 length string, it should return 0/15
+    ✅ case 3: for 15 length string, it should return 0/15
 
 scenario 2: with errors, printer should print errorAmount/length
 
