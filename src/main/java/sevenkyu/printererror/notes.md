@@ -6,5 +6,5 @@ scenario 1: with no errors, printer should print "0/length"
 
 scenario 2: with errors, printer should print errorAmount/length
 
-    ❗ case 1: with one error with length 10, it should return 1/10
+    ✅ case 1: with one error with length 10, it should return 1/10
     ❗ case 1: with ten error with length 10, it should return 10/10
