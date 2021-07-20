@@ -25,4 +25,17 @@ class PrinterErrorTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenOneCharString_printerError_shouldPrintZeroOutOfOne() {
+        // given
+        String input = "";
+        String expected = "0/1";
+
+        // when
+        String output = printerError.printerError(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
