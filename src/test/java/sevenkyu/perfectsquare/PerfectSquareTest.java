@@ -51,4 +51,17 @@ class PerfectSquareTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+    @Test
+    void givenInputIs625_findNextSquare_shouldReturnWith676() {
+        // given
+        long input = 625;
+        long expected = 676;
+
+        // when
+        long output = perfectSquare.findNextSquare(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
+
 }
