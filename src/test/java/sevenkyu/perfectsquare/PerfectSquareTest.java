@@ -17,11 +17,12 @@ class PerfectSquareTest {
     void givenInputIsNotSquare_findNextSquare_shouldReturnWithMinusOne() {
         // given
         long input = 2;
+        long expected = -1;
 
         // when
         long output = perfectSquare.findNextSquare(input);
 
         // then
-        assertThat(output).isEqualTo(input);
+        assertThat(output).isEqualTo(expected);
     }
 }
