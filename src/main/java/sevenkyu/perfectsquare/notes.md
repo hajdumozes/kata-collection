@@ -1,6 +1,6 @@
 scenario 1: return -1 for not squares
 
-    ❗ case 1: for input 2, return -1
+    ✅ case 1: for input 2, return -1
 
 scenario 2: for squares, return next square number
 
