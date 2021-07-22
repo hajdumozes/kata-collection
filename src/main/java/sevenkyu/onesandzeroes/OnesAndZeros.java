@@ -4,7 +4,7 @@ import java.util.List;
 
 class OnesAndZeros {
 
-    public int ConvertBinaryArrayToInt(List<Integer> binary) {
+    public int convertBinaryArrayToInt(List<Integer> binary) {
         return 0;
     }
 }
