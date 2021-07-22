@@ -54,5 +54,16 @@ class OnesAndZerosTest {
         assertThat(output).isEqualTo(expected);
     }
 
+    @Test
+    void given1001_convertBinaryArrayToInt_shouldReturn9() {
+        // given
+        List<Integer> input = List.of(1, 0, 0, 1);
+        int expected = 9;
 
+        // when
+        int output = onesAndZeros.convertBinaryArrayToInt(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
