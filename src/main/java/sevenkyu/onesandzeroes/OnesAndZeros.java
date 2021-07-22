@@ -5,6 +5,6 @@ import java.util.List;
 class OnesAndZeros {
 
     public int convertBinaryArrayToInt(List<Integer> binary) {
-        return 0;
+        return 1;
     }
 }
