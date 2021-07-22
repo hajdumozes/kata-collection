@@ -42,10 +42,10 @@ class OnesAndZerosTest {
     }
 
     @Test
-    void given0110_convertBinaryArrayToInt_shouldReturn9() {
+    void given0110_convertBinaryArrayToInt_shouldReturn6() {
         // given
         List<Integer> input = List.of(0, 1, 1, 0);
-        int expected = 9;
+        int expected = 6;
 
         // when
         int output = onesAndZeros.convertBinaryArrayToInt(input);

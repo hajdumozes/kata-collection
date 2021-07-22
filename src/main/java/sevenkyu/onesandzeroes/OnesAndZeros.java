@@ -1,13 +1,14 @@
 package sevenkyu.onesandzeroes;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 class OnesAndZeros {
 
     public int convertBinaryArrayToInt(List<Integer> binary) {
-        if (binary.equals(List.of(1, 1, 1, 1))) {
-            return 15;
-        }
-        return 1;
+        String binaryString = binary.stream()
+            .map(String::valueOf)
+            .collect(Collectors.joining());
+        return Integer.parseInt(binaryString, 2);
     }
 }
