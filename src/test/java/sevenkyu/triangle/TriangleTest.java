@@ -41,4 +41,18 @@ class TriangleTest {
         // then
         assertThatThrownBy(isTriangle).isInstanceOf(IllegalArgumentException.class);
     }
+
+    @Test
+    void givenSideCIsSmallerThan1_isTriangle_shouldThrowError() {
+        // given
+        int a = 1;
+        int b = 1;
+        int c = 0;
+
+        // when
+        ThrowableAssert.ThrowingCallable isTriangle = () -> triangle.isTriangle(a, b, c);
+
+        // then
+        assertThatThrownBy(isTriangle).isInstanceOf(IllegalArgumentException.class);
+    }
 }
