@@ -6,15 +6,12 @@ class Triangle {
         if (a < 1 || b < 1 || c < 1) {
             throw new IllegalArgumentException();
         }
-        if (a > b + c) {
+        if (a >= b + c) {
             return false;
         }
-        if (b > a + c) {
+        if (b >= a + c) {
             return false;
         }
-        if (c > a + b) {
-            return false;
-        }
-        return true;
+        return c < a + b;
     }
 }

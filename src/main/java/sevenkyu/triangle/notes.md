@@ -6,4 +6,4 @@
 
 ✅ case 4: no side is bigger, than the two other combined, return true
 
-case 5: one side is equal to the other two combined, should return false;
+✅ case 5: one side is equal to the other two combined, should return false;
