@@ -12,6 +12,9 @@ class Triangle {
         if (b > a + c) {
             return false;
         }
+        if (c > a + b) {
+            return false;
+        }
         return true;
     }
 }
