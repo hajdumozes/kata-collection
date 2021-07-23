@@ -4,6 +4,7 @@ import org.assertj.core.api.ThrowableAssert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class TriangleTest {
@@ -54,5 +55,19 @@ class TriangleTest {
 
         // then
         assertThatThrownBy(isTriangle).isInstanceOf(IllegalArgumentException.class);
+    }
+
+    @Test
+    void givenSidesAreIdentical_isTriangle_shouldReturnTrue() {
+        // given
+        int a = 1;
+        int b = 1;
+        int c = 1;
+
+        // when
+        boolean isTriangle = this.triangle.isTriangle(a, b, c);
+
+        // then
+        assertThat(isTriangle).isTrue();
     }
 }
