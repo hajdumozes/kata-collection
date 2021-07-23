@@ -4,4 +4,4 @@
 
 ✅ case 3: one side is bigger, than the two other combined, return false
 
-case 4: no side is bigger, than the two other combined, return true
+✅ case 4: no side is bigger, than the two other combined, return true
