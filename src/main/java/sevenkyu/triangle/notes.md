@@ -1,4 +1,4 @@
-case 1: one side is smaller than one, should throw error
+✅ case 1: one side is smaller than one, should throw error
 
 case 2: all sides are identical, return true
 
