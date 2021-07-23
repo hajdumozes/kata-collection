@@ -84,4 +84,18 @@ class TriangleTest {
         // then
         assertThat(isTriangle).isFalse();
     }
+
+    @Test
+    void givenSideBIsBiggerThanTheTwoOther_isTriangle_shouldReturnFalse() {
+        // given
+        int a = 3;
+        int b = 8;
+        int c = 4;
+
+        // when
+        boolean isTriangle = this.triangle.isTriangle(a, b, c);
+
+        // then
+        assertThat(isTriangle).isFalse();
+    }
 }
