@@ -6,6 +6,9 @@ class Triangle {
         if (a < 1 || b < 1 || c < 1) {
             throw new IllegalArgumentException();
         }
+        if (a > b + c) {
+            return false;
+        }
         return true;
     }
 }
