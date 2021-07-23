@@ -9,6 +9,9 @@ class Triangle {
         if (a > b + c) {
             return false;
         }
+        if (b > a + c) {
+            return false;
+        }
         return true;
     }
 }
