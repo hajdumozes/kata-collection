@@ -1,17 +1,16 @@
 package sevenkyu.peopleonbus;
 
-import java.util.Arrays;
 import java.util.List;
 
 class PeopleOnBus {
 
     public int countPassengers(List<int[]> stops) {
-        if (stops.isEmpty()) {
-            return 0;
+        int in = 0;
+        int out = 0;
+        for (int[] stop : stops) {
+            in += stop[0];
+            out += stop[1];
         }
-        if (Arrays.equals(stops.get(0), (new int[]{10, 0}))) {
-            return 10;
-        }
-        return 0;
+        return in - out;
     }
 }
