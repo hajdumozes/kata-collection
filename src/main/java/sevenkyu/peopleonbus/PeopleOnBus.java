@@ -1,10 +1,10 @@
 package sevenkyu.peopleonbus;
 
-import java.util.ArrayList;
+import java.util.List;
 
 class PeopleOnBus {
 
-    public int countPassengers(ArrayList<int[]> stops) {
-        return 0;
+    public int countPassengers(List<int[]> stops) {
+        return -1;
     }
 }
