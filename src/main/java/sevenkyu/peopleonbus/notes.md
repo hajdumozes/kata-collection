@@ -4,7 +4,7 @@ scenario: empty input
 
 scenario: one array input, return first number
 
-- case 2: for input [[10, 0]], return 10
+- ✅ case 2: for input [[10, 0]], return 10
 
 scenario: multiple array input, add first elements, and remove seconds from them
 
