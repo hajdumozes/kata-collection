@@ -1,6 +1,6 @@
 scenario: empty input
 
-- case 1: empty input, return 0
+- ✅ case 1: empty input, return 0
 
 scenario: one array input, return first number
 
