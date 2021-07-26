@@ -9,4 +9,4 @@ scenario: one array input, return first number
 scenario: multiple array input, add first elements, and remove seconds from them
 
 - ✅ case 3: for input [[10, 0], [3, 5]] return 8
-- case 4: for input [[10, 0], [3, 5], [5, 5]] return 5 
+- ✅ case 4: for input [[10, 0], [3, 5], [2, 5]] return 5 

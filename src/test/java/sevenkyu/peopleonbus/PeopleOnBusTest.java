@@ -53,4 +53,17 @@ class PeopleOnBusTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultiArrayInput_countPassenger_shouldReturnFirstElementSumMinusSecondElementSum() {
+        // given
+        List<int[]> input = List.of(new int[]{10, 0}, new int[]{3, 5}, new int[]{2, 5});
+        int expected = 5;
+
+        // when
+        int output = peopleOnBus.countPassengers(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
