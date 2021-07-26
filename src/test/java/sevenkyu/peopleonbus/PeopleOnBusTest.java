@@ -25,6 +25,19 @@ class PeopleOnBusTest {
         int output = peopleOnBus.countPassengers(input);
 
         // then
-        assertThat(output).isEqualTo(0);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    void givenOneArrayInput_countPassenger_shouldReturnWithFirstElement() {
+        // given
+        List<int[]> input = List.of(new int[]{10, 0});
+        int expected = 10;
+
+        // when
+        int output = peopleOnBus.countPassengers(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
     }
 }
