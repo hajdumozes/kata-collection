@@ -3,9 +3,6 @@ package sevenkyu.reversewords;
 class ReverseWords {
 
     public String reverse(String original) {
-        if (original.equals("test")) {
-            return "tset";
-        }
-        return original;
+        return new StringBuilder(original).reverse().toString();
     }
 }
