@@ -51,4 +51,17 @@ class ReverseWordsTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultipleWords_reverse_shouldReverseAllInOrder() {
+        // given
+        String input = "This is an example!";
+        String expected = "sihT si na !elpmaxe";
+
+        // when
+        String output = reverseWords.reverse(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
