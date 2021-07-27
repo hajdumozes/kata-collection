@@ -25,4 +25,17 @@ class ReverseWordsTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenWord_reverse_shouldReturnWordInReverse() {
+        // given
+        String input = "test";
+        String expected = "tset";
+
+        // when
+        String output = reverseWords.reverse(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
