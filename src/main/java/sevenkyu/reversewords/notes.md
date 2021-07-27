@@ -13,4 +13,4 @@ scenario: multiple words should return all words reversed, keeping order
 
 scenario: it should retain spaces
 
-- case 5: double spaces -> elbuod secaps
+- ✅ case 5: double  spaces -> elbuod  secaps

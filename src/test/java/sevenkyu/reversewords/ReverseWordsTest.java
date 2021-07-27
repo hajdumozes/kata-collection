@@ -64,4 +64,17 @@ class ReverseWordsTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultipleWords_reverse_shouldKeepSpaces() {
+        // given
+        String input = "double  spaces";
+        String expected = "elbuod  secaps";
+
+        // when
+        String output = reverseWords.reverse(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
