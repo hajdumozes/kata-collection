@@ -77,4 +77,17 @@ class ReverseWordsTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenEmptySpaces_reverse_shouldKeepSpaces() {
+        // given
+        String input = "  ";
+        String expected = "  ";
+
+        // when
+        String output = reverseWords.reverse(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
