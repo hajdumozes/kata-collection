@@ -1,8 +1,14 @@
 package sevenkyu.reversewords;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 class ReverseWords {
 
     public String reverse(String original) {
-        return new StringBuilder(original).reverse().toString();
+        String[] split = original.split(" ");
+        return Arrays.stream(split)
+            .map(word -> new StringBuilder(word).reverse().toString())
+            .collect(Collectors.joining(" "));
     }
 }

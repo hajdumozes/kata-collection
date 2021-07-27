@@ -9,7 +9,7 @@ scenario: one word should return its reversed self
 
 scenario: multiple words should return all words reversed, keeping order
 
-- case 4: This is an example! -> sihT si na !elpmaxe
+- ✅ case 4: This is an example! -> sihT si na !elpmaxe
 
 scenario: it should retain spaces
 
