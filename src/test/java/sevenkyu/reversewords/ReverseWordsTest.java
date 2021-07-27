@@ -38,4 +38,17 @@ class ReverseWordsTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenWord_reverse_shouldRetainCases() {
+        // given
+        String input = "Maybe";
+        String expected = "ebyaM";
+
+        // when
+        String output = reverseWords.reverse(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
