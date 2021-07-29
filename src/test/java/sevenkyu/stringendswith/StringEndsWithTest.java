@@ -25,4 +25,17 @@ class StringEndsWithTest {
         // then
         assertThat(output).isTrue();
     }
+
+    @Test
+    void givenAAEndsWithA_solution_shouldReturnTrue() {
+        // given
+        String string = "aa";
+        String endsWith = "a";
+
+        // when
+        boolean output = stringEndsWith.solution(string, endsWith);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }
