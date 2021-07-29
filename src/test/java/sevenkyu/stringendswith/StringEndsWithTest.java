@@ -64,4 +64,17 @@ class StringEndsWithTest {
         // then
         assertThat(output).isFalse();
     }
+
+    @Test
+    void givenAbcEndsWithBc_solution_shouldReturnTrue() {
+        // given
+        String string = "abc";
+        String endsWith = "bc";
+
+        // when
+        boolean output = stringEndsWith.solution(string, endsWith);
+
+        // then
+        assertThat(output).isTrue();
+    }
 }
