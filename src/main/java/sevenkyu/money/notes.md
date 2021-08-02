@@ -1,6 +1,6 @@
 scenario 1: desired is smaller then principal
 
-- case 1: -> 0
+- ✅ case 1: -> 0
 
 scenario 2: there is no tax
 
