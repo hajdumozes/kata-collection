@@ -68,7 +68,7 @@ class MoneyTest {
         int principal = 1000;
         double interest = 0.05;
         double tax = 0.18;
-        int desired = 1180;
+        int desired = 1100;
         int expectedYears = 3;
 
         // when

@@ -6,7 +6,9 @@ class Money {
         int year = 0;
         double currentMoney = principal;
         while (currentMoney < desired) {
-            currentMoney += currentMoney * interest;
+            double profit = currentMoney * interest;
+            profit -= profit * tax;
+            currentMoney += profit;
             year++;
         }
         return year;
