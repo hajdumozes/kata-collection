@@ -44,4 +44,21 @@ class MoneyTest {
         // then
         assertThat(output).isEqualTo(expectedYears);
     }
+
+
+    @Test
+    void givenNoTax_calculateYears_shouldReturnWithNeededYearsRoundedUp() {
+        // given
+        int principal = 1000;
+        double interest = 0.10;
+        double tax = 0;
+        int desired = 1180;
+        int expectedYears = 2;
+
+        // when
+        int output = money.calculateYears(principal, interest, tax, desired);
+
+        // then
+        assertThat(output).isEqualTo(expectedYears);
+    }
 }
