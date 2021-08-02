@@ -10,4 +10,4 @@ scenario 2: there is no tax
 scenario 3: there is tax
 
 - ✅ case 4: principal 1000, interest 0.05, tax 0.18,desired sum 1100 -> 3
-- case 5: principal 1000, interest 0.01625, tax 0.18,desired sum 1200 -> 14
+- ✅ case 5: principal 1000, interest 0.01625, tax 0.18,desired sum 1200 -> 14
