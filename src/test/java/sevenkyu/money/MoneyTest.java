@@ -77,4 +77,20 @@ class MoneyTest {
         // then
         assertThat(output).isEqualTo(expectedYears);
     }
+
+    @Test
+    void givenTaxExists_calculateYears_shouldTaxAcquiredMoneyOnly() {
+        // given
+        int principal = 1000;
+        double interest = 0.01625;
+        double tax = 0.18;
+        int desired = 1200;
+        int expectedYears = 14;
+
+        // when
+        int output = money.calculateYears(principal, interest, tax, desired);
+
+        // then
+        assertThat(output).isEqualTo(expectedYears);
+    }
 }
