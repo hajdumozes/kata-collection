@@ -6,6 +6,12 @@ class Money {
         if (principal >= desired) {
             return 0;
         }
-        return 1;
+        int year = 0;
+        double currentMoney = principal;
+        while (currentMoney < desired) {
+            currentMoney += currentMoney * interest;
+            year++;
+        }
+        return year;
     }
 }

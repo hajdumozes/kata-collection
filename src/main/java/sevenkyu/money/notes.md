@@ -5,7 +5,7 @@ scenario 1: desired is smaller then principal
 scenario 2: there is no tax
 
 - ✅ case 2: principal 1000, interest 0.10, desired sum 1100 -> 1
-- case 3: principal 1000, interest 0.10, desired sum 1180 -> 2
+- ✅ case 3: principal 1000, interest 0.10, desired sum 1180 -> 2
 
 scenario 3: there is tax
 
