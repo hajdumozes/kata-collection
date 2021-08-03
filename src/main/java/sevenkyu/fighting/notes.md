@@ -8,4 +8,4 @@ scenario: 1 turn fight
 scenario: multiple turn fight
 
 - ✅ case 5: 10/3 & 6/4 starter, -> 10/3 wins
-- case 6: 10/3 starter & 8/4, -> 10/3 wins
+- ✅ case 6: 10/3 starter & 8/4, -> 10/3 wins

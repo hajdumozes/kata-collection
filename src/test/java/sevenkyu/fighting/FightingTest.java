@@ -84,4 +84,18 @@ class FightingTest {
         // then
         assertThat(output).isEqualTo(expectedWinner);
     }
+
+    @Test
+    void givenMultipleTurnFightSimilarStats_declareWinner_shouldReturnStarter() {
+        // given
+        String expectedWinner = "Scorpion";
+        Fighting.Fighter scorpion = new Fighting.Fighter(expectedWinner, 10, 3);
+        Fighting.Fighter subZero = new Fighting.Fighter("Sub Zero", 6, 4);
+
+        // when
+        String output = fighting.declareWinner(scorpion, subZero, expectedWinner);
+
+        // then
+        assertThat(output).isEqualTo(expectedWinner);
+    }
 }
