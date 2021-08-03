@@ -40,4 +40,18 @@ class FightingTest {
         // then
         assertThat(output).isEqualTo(starter);
     }
+
+    @Test
+    void givenOneTurnStatsForBoth_declareWinner_shouldReturnStarter() {
+        // given
+        String starter = "Sub Zero";
+        Fighting.Fighter scorpion = new Fighting.Fighter(starter, 1, 1);
+        Fighting.Fighter subZero = new Fighting.Fighter("Sub Zero", 1, 1);
+
+        // when
+        String output = fighting.declareWinner(scorpion, subZero, starter);
+
+        // then
+        assertThat(output).isEqualTo(starter);
+    }
 }
