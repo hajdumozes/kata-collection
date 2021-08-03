@@ -31,8 +31,8 @@ class FightingTest {
     void givenMinimumStatsSecondStarts_declareWinner_shouldReturnSecond() {
         // given
         String starter = "Sub Zero";
-        Fighting.Fighter scorpion = new Fighting.Fighter(starter, 1, 1);
-        Fighting.Fighter subZero = new Fighting.Fighter("Sub Zero", 1, 1);
+        Fighting.Fighter scorpion = new Fighting.Fighter("Scorpion", 1, 1);
+        Fighting.Fighter subZero = new Fighting.Fighter(starter, 1, 1);
 
         // when
         String output = fighting.declareWinner(scorpion, subZero, starter);
@@ -45,13 +45,28 @@ class FightingTest {
     void givenOneTurnStatsForBoth_declareWinner_shouldReturnStarter() {
         // given
         String starter = "Sub Zero";
-        Fighting.Fighter scorpion = new Fighting.Fighter(starter, 1, 1);
-        Fighting.Fighter subZero = new Fighting.Fighter("Sub Zero", 1, 1);
+        Fighting.Fighter scorpion = new Fighting.Fighter("Scorpion", 1, 1);
+        Fighting.Fighter subZero = new Fighting.Fighter(starter, 1, 1);
 
         // when
         String output = fighting.declareWinner(scorpion, subZero, starter);
 
         // then
         assertThat(output).isEqualTo(starter);
+    }
+
+    @Test
+    void givenSignificantStatDifference_declareWinner_shouldReturnBiggerDamage() {
+        // given
+        String starter = "Sub Zero";
+        String expectedWinner = "Scorpion";
+        Fighting.Fighter scorpion = new Fighting.Fighter(expectedWinner, 2, 2);
+        Fighting.Fighter subZero = new Fighting.Fighter(starter, 2, 1);
+
+        // when
+        String output = fighting.declareWinner(scorpion, subZero, starter);
+
+        // then
+        assertThat(output).isEqualTo(expectedWinner);
     }
 }
