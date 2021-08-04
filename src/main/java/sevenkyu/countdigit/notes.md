@@ -5,7 +5,7 @@ scenario: square top is 0
 
 scenario: square top is 1 (squares are 0 & 1)
 
-- case 3: digit 0 -> 1
+- ✅ case 3: digit 0 -> 1
 - case 4: digit 1 -> 1
 - case 5: digit 2 -> 2
 
