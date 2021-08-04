@@ -54,4 +54,18 @@ class CountDigitTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenSquareTopIs1DigitIs1_nbDig_shouldReturn1() {
+        // given
+        int squareTop = 1;
+        int digit = 1;
+        int expected = 1;
+
+        // when
+        int output = countDigit.nbDig(squareTop, digit);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
