@@ -1,6 +1,6 @@
 scenario: square top is 0
 
-- case 1: digit 0 -> 1
+- ✅ case 1: digit 0 -> 1
 - case 2: digit 1 -> 2
 
 scenario: square top is 1 (squares are 0 & 1)
