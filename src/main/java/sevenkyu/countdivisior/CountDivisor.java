@@ -1,11 +1,12 @@
 package sevenkyu.countdivisior;
 
+import java.util.stream.IntStream;
+
 class CountDivisor {
 
     public long numberOfDivisors(int n) {
-        if (n == 2) {
-            return 2;
-        }
-        return 1;
+        return IntStream.range(1, n + 1)
+            .filter(index -> n % index == 0)
+            .count();
     }
 }
