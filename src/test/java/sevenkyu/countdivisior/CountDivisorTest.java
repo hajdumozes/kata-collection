@@ -25,4 +25,17 @@ class CountDivisorTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenInputIs2_numberOfDivisors_shouldReturn2() {
+        // given
+        int input = 2;
+        int expected = 2;
+
+        // when
+        long output = countDivisor.numberOfDivisors(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
