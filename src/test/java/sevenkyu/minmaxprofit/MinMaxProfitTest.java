@@ -38,4 +38,17 @@ class MinMaxProfitTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenArrayIsNotOrdered_minMax_shouldReturnSmallestAndLargest() {
+        // given
+        int[] input = new int[]{19, 2, 5};
+        int[] expected = new int[]{2, 19};
+
+        // when
+        int[] output = minMaxProfit.minMax(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
