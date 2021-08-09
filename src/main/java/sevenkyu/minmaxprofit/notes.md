@@ -1,6 +1,6 @@
 scenario: 1 length array
 
-- case 1: 1 -> 1, 1
+- ✅ case 1: 1 -> 1, 1
 
 scenario 2: multiple numbers
 
