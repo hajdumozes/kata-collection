@@ -1,8 +1,13 @@
 package sevenkyu.minmaxprofit;
 
+import java.util.Arrays;
+import java.util.IntSummaryStatistics;
+
 class MinMaxProfit {
 
     public int[] minMax(int[] arr) {
-        return new int[]{arr[0], arr[arr.length - 1]};
+        IntSummaryStatistics intSummaryStatistics = Arrays.stream(arr)
+            .summaryStatistics();
+        return new int[]{intSummaryStatistics.getMin(), intSummaryStatistics.getMax()};
     }
 }
