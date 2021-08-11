@@ -26,4 +26,18 @@ class ChocolateBreakingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenOneRow_breakChocolate_shouldReturnColumnNumberMinusOne() {
+        // given
+        int row = 1;
+        int column = 2;
+        int expected = 1;
+
+        // when
+        int output = chocolateBreaking.breakChocolate(row, column);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
