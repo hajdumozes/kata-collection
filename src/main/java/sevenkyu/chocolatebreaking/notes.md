@@ -15,4 +15,4 @@ scenario: multiple rows (multiplication - 1 needed)
 scenario: invalid input (return 0)
 
 - ✅ case 6: 0x5 -> 0
-- case 7: 5x0 -> 0
+- ✅ case 7: 5x0 -> 0
