@@ -4,7 +4,7 @@ scenario: 1 square (no break needed)
 
 scenario: 1 row (square number - 1 needed)
 
-- case 2: 1x2 -> 1
+- ✅ case 2: 1x2 -> 1
 - case 3: 1x5 -> 4
 
 scenario: multiple rows (multiplication - 1 needed)
