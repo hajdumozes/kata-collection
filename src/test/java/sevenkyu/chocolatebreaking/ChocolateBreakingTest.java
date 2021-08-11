@@ -96,4 +96,18 @@ class ChocolateBreakingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void given5x0_breakChocolate_shouldReturnZero() {
+        // given
+        int row = 5;
+        int column = 0;
+        int expected = 0;
+
+        // when
+        int output = chocolateBreaking.breakChocolate(row, column);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
