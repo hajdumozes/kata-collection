@@ -54,4 +54,18 @@ class ChocolateBreakingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void given2x2_breakChocolate_shouldReturnMultiplicationMinus1() {
+        // given
+        int row = 2;
+        int column = 2;
+        int expected = 3;
+
+        // when
+        int output = chocolateBreaking.breakChocolate(row, column);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
