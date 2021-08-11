@@ -11,3 +11,8 @@ scenario: multiple rows (multiplication - 1 needed)
 
 - ✅ case 4: 2x2 -> 3
 - ✅ case 5: 5x5 -> 24
+
+scenario: invalid input (return 0)
+
+- case 6: 0x5 -> 0
+- case 7: 5x0 -> 0
