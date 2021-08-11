@@ -2,6 +2,6 @@ package sevenkyu.chocolatebreaking;
 
 class ChocolateBreaking {
     public int breakChocolate(int n, int m) {
-        return -1;
+        return 0;
     }
 }
