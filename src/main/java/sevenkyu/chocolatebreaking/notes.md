@@ -9,5 +9,5 @@ scenario: 1 row (square number - 1 needed)
 
 scenario: multiple rows (multiplication - 1 needed)
 
-- case 4: 2x2 -> 3
+- ✅ case 4: 2x2 -> 3
 - case 5: 5x5 -> 24
