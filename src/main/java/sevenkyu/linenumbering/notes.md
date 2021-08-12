@@ -1,6 +1,6 @@
 scenario: 1 element input (put 1: before it)
 
-- case 1: a -> 1: a
+- ✅ case 1: a -> 1: a
 - case 2: "" -> 2: ""
 
 scenario: 2 element input (put 1 & 2 before it)
