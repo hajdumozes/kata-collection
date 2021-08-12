@@ -40,4 +40,17 @@ class LineNumberingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenTwoElementInput_number_shouldReturnTwoLinesInOrder() {
+        // given
+        List<String> input = List.of("c", "d");
+        List<String> expected = List.of("1: c", "2: d");
+
+        // when
+        List<String> output = lineNumbering.number(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
