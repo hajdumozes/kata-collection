@@ -9,4 +9,4 @@ scenario: 2 element input (put 1 & 2 before it)
 
 scenario: multiple element input (put lines before it)
 
-- case 4: k,i,t,t,y -> 1: k, 2: i, 3: t, 4: t, 5: y
+- ✅ case 4: k,i,t,t,y -> 1: k, 2: i, 3: t, 4: t, 5: y
