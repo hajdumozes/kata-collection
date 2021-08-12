@@ -27,4 +27,17 @@ class LineNumberingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenEmptyString_number_shouldReturnFirstLineAndEmptyString() {
+        // given
+        List<String> input = List.of("");
+        List<String> expected = List.of("1: ");
+
+        // when
+        List<String> output = lineNumbering.number(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
