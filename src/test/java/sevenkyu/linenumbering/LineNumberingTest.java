@@ -53,4 +53,17 @@ class LineNumberingTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultiElementInput_number_shouldReturnLinesInOrder() {
+        // given
+        List<String> input = List.of("k", "i", "t", "t", "y");
+        List<String> expected = List.of("1: k", "2: i", "3: t", "4: t", "5: y");
+
+        // when
+        List<String> output = lineNumbering.number(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
