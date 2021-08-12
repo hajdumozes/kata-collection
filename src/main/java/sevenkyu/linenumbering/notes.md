@@ -5,7 +5,7 @@ scenario: 1 element input (put 1: before it)
 
 scenario: 2 element input (put 1 & 2 before it)
 
-- case 3: c, d -> 1: c, 2: d
+- ✅ case 3: c, d -> 1: c, 2: d
 
 scenario: multiple element input (put lines before it)
 
