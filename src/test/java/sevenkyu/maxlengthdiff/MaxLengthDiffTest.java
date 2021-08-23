@@ -82,4 +82,18 @@ class MaxLengthDiffTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultipleElement_mxdiflg_shouldReturnLengthDiffFromA1Standpoint() {
+        // given
+        String[] a1 = new String[]{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"};
+        String[] a2 = new String[]{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"};
+        int expected = 13;
+
+        // when
+        int output = maxLengthDiff.mxdiflg(a1, a2);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
