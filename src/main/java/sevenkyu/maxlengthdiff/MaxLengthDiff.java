@@ -6,6 +6,6 @@ class MaxLengthDiff {
         if (a1.length == 0 || a2.length == 0) {
             return -1;
         }
-        return 0;
+        return a1[0].length() - a2[0].length();
     }
 }
