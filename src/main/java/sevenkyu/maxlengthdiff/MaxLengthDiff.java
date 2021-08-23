@@ -2,7 +2,6 @@ package sevenkyu.maxlengthdiff;
 
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
-import java.util.stream.Stream;
 
 class MaxLengthDiff {
 
@@ -10,9 +9,12 @@ class MaxLengthDiff {
         if (a1.length == 0 || a2.length == 0) {
             return -1;
         }
-        IntSummaryStatistics summary = Stream.concat(Arrays.stream(a1), Arrays.stream(a2))
+        IntSummaryStatistics firstSummary = Arrays.stream(a1)
             .mapToInt(String::length)
             .summaryStatistics();
-        return summary.getMax() - summary.getMin();
+        IntSummaryStatistics secondSummary = Arrays.stream(a2)
+            .mapToInt(String::length)
+            .summaryStatistics();
+        return Math.max(firstSummary.getMax() - secondSummary.getMin(), secondSummary.getMax() - firstSummary.getMin());
     }
 }
