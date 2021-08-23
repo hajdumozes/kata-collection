@@ -54,4 +54,18 @@ class MaxLengthDiffTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenOneElementA1IsLonger_mxdiflg_shouldReturnPositiveDiffNumber() {
+        // given
+        String[] a1 = new String[]{"ab"};
+        String[] a2 = new String[]{"b"};
+        int expected = 1;
+
+        // when
+        int output = maxLengthDiff.mxdiflg(a1, a2);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
