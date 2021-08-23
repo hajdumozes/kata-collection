@@ -11,4 +11,4 @@ scenario: one element
 
 scenario: multiple element
 
-- case 6: length should be added, and compared
+- case 6: find longest and shortest, return diff

@@ -84,7 +84,7 @@ class MaxLengthDiffTest {
     }
 
     @Test
-    void givenMultipleElement_mxdiflg_shouldReturnLengthDiffFromA1Standpoint() {
+    void givenMultipleElement_mxdiflg_shouldReturnMaxMinusMinLength() {
         // given
         String[] a1 = new String[]{"hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"};
         String[] a2 = new String[]{"cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"};
