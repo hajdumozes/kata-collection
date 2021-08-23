@@ -1,7 +1,7 @@
 scenario: either empty
 
 - ✅ case 1: s1 is empty -> return -1
-- case 2: s2 is empty -> return -1
+- ✅ case 2: s2 is empty -> return -1
 
 scenario: one element
 

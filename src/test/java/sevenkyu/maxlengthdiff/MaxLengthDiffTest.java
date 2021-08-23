@@ -26,4 +26,18 @@ class MaxLengthDiffTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenA2IsEmpty_mxdiflg_shouldReturnMinusOne() {
+        // given
+        String[] a1 = new String[]{"a"};
+        String[] a2 = new String[]{};
+        int expected = -1;
+
+        // when
+        int output = maxLengthDiff.mxdiflg(a1, a2);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
