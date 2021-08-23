@@ -5,7 +5,7 @@ scenario: either empty
 
 scenario: one element
 
-- case 3: both 1 char long -> return 0
+- ✅ case 3: both 1 char long -> return 0
 - case 4: s1 is 1 char longer -> return 1
 - case 5: s2 is 1 char longer -> return -1
 
