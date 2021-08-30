@@ -14,10 +14,23 @@ class ReverseLetterTest {
     }
 
     @Test
-    void givenOneCharLongLetter_reverseLetter_shouldReturnLetter() {
+    void givenOneCharLongWord_reverseLetter_shouldReturnLetter() {
         // given
         String input = "a";
         String expected = "a";
+
+        // when
+        String output = reverseLetter.reverseLetter(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    void givenMultipleCharLongWord_reverseLetter_shouldReverseWord() {
+        // given
+        String input = "abc";
+        String expected = "cba";
 
         // when
         String output = reverseLetter.reverseLetter(input);
