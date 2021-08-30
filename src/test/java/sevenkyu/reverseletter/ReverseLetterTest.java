@@ -38,4 +38,17 @@ class ReverseLetterTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultipleCharLongWordWithNonAlphabeticChars_reverseLetter_shouldReverseWordAndCutNonAlphabetic() {
+        // given
+        String input = "ab45c";
+        String expected = "cba";
+
+        // when
+        String output = reverseLetter.reverseLetter(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
