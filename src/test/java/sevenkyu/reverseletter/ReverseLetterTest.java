@@ -51,4 +51,17 @@ class ReverseLetterTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMultipleCharLongWordWithSpecialChars_reverseLetter_shouldReverseWordAndCutSpecial() {
+        // given
+        String input = "ultr53o?n";
+        String expected = "nortlu";
+
+        // when
+        String output = reverseLetter.reverseLetter(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
