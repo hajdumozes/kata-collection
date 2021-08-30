@@ -2,6 +2,7 @@ package sevenkyu.reverseletter;
 
 class ReverseLetter {
     public String reverseLetter(final String str) {
-        return new StringBuilder(str).reverse().toString();
+        String onlyAlphabeticChars = str.replaceAll("[^a-zA-Z].","");
+        return new StringBuilder(onlyAlphabeticChars).reverse().toString();
     }
 }

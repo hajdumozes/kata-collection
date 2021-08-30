@@ -5,4 +5,4 @@ scenario 1: should reverse letters
 
 scenario 2: cut non-alphabetic chars
 
-- case 3: "ab45c" -> "cba"
+- ✅ case 3: "ab45c" -> "cba"
