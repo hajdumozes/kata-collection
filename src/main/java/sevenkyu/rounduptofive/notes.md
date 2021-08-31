@@ -1,7 +1,7 @@
 scenario: multiple of five
 
 - ✅ case 1: 0 -> 0
-- case 2: 5 -> 5
+- ✅ case 2: 5 -> 5
 
 scenario: not a multiple of five, round up to next
 
