@@ -64,4 +64,17 @@ class RoundUpToFiveTest {
         // then
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    void givenMinus2_roundToNext5_shouldReturn0() {
+        // given
+        int input = -2;
+        int expected = 0;
+
+        // when
+        int output = roundUpToFive.roundToNext5(input);
+
+        // then
+        assertThat(output).isEqualTo(expected);
+    }
 }
