@@ -2,10 +2,8 @@ package sevenkyu.rounduptofive;
 
 class RoundUpToFive {
     public int roundToNext5(int number) {
-        if (number % 5 == 0) {
-            return number;
-        }
-        int remainder = number % 5;
-        return number + 5 - remainder;
+        double division = (double) number / 5;
+        double roundedUpDivision = Math.ceil(division);
+        return (int) (5 * roundedUpDivision);
     }
 }
