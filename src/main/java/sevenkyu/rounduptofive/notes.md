@@ -5,6 +5,6 @@ scenario: multiple of five
 
 scenario: not a multiple of five, round up to next
 
-- case 3: 1 -> 5
+- ✅ case 3: 1 -> 5
 - case 4: 18 -> 20
 - case 5: -2 -> 0
